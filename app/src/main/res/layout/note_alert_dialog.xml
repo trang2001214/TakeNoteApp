@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="New Note"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:background="@color/LightCyan"/>
+    <EditText
+        android:id="@+id/txtName"
+        android:hint="Enter your takeNote"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:lines="2"
+        android:inputType="text"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxImportant"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="left"
+        android:buttonTint="@color/LightOrange"
+        android:text="Important"
+        android:textColor="@color/LightOrange" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/LightOrange"
+            android:text="Cancel"
+            android:textColor="#090909" />
+        <Space
+            android:layout_width="15dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/btnCommit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/LightCyan"
+            android:text="Commit" />
+    </LinearLayout>
+</LinearLayout>
